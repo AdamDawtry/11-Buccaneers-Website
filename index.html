@@ -15,28 +15,24 @@
     </div>
     <hr />
     <p>
-      Welcome to the 11 Buccaneers website! Below you'll find all the milestone
-      builds of our York Pirate Game project, along with download and GitHub
-      links, screenshots and information about each of them.
+      Welcome to the 11 Buccaneers website! Below you'll find an index of all
+      the milestone builds for our York Pirate Game project. Clicking on one
+      will bring you down to the correct part of the webpage, and each snapshot
+      has a download link for a .zip file containing an executable .jar of the
+      game build and a folder with its source code.
     </p>
-    <h3>All Snapshots</h3>
-    <ol>
-      <li><a href="#snap1">Snapshot 1 (21/01/22)</a></li>
-      <li><a href="">Snapshot 2 (d/m/y)</a></li>
-    </ol>
-    <p>
-      Welcome to the snapshots page. Each snapshot is indicative of a
-      significant stage of progress in the project that will no doubt be ridden
-      with bugs. The version downloads are a .zip file containing the source
-      code as well as a .jar file which you can run independently from anywhere.
-    </p>
+    <div id="snapshots_index">
+      <h3>All Snapshots</h3>
+      <p>All versions are available from our <a href="https://github.com/UOY-ENG1-Team-11/PirateGame/releases"
+        target="_blank">GitHub page</a> as well!</p>
+      <ol>
+        <li><a href="#snap1">Snapshot 1 (21/01/22)</a></li>
+        <li><a href="#snap2">Snapshot 2 (29/01/22)</a></li>
+        <li><a href="#snap3">Snapshot 3 (29/01/22)</a></li>
+      </ol>
+    </div>
     <h4 id="snap1">Snapshot 1 (21/01/22)</h4>
-    <a href="/game_builds/build1.zip">Version download</a><br />
-    <a
-      href="https://github.com/UOY-ENG1-Team-11/PirateGame/releases/tag/Prototype"
-      target="_blank"
-      >GitHub Page</a
-    >
+    <a href="game_builds/build1.zip">Version download</a>
     <p>
       The first snapshot is about as basic as it gets. The goal was simply to
       have a ship which you can control and move with WASD and little area to
@@ -48,7 +44,7 @@
     </p>
     <img
       class="build_img"
-      src="/img/BUILD1_scr1.png"
+      src="img/BUILD1_scr1.png"
       alt="Very simple ocean surrounded by land in which a rudimentary ship moves around."
     />
     <p>
@@ -58,13 +54,53 @@
       maximum etc. etc.
     </p>
 
-    <h4>Snapshot 2 (d/m/y)</h4>
-    <a href="">Version download</a>
-    <p>Info about snapshot etc. etc. etc.</p>
-    <img src="" alt="Some picture of the game" />
+    <h4 id="snap2">Snapshot 2 (29/01/22)</h4>
+    <a href="game_builds/build2.zip">Version download</a>
     <p>
-      Yet more game snapshot info, Lorem ipsum dolor, sit amet consectetur
-      adipisicing elit. Neque, dolorem?
+      This version features proper sprites for the player and their environment,
+      as well as collision checking with land tiles and a larger map with a
+      scrolling camera that follows the player. It also adds a health bar under
+      the player sprite, though there is no way for its value to change through
+      gameplay.
+    </p>
+    <span>
+    <img
+      class="build_img"
+      src="img/BUILD2_scr1.png"
+      alt="The boat now uses a proper sprite as well as the land and ocean."
+    /><img
+    class="build_img"
+    src="img/BUILD2_scr2.png"
+    alt="The boat firing a cannon ball."
+  /></span>
+    <p>
+      You obviously can't see it with a static image, but the boat sprite is
+      animated while it's moving. The boat can also fire cannon balls by pressing the spacebar. At this point
+      they travel for a full 10 seconds before expiring, though naturally they won't last this long in later versions.
+    </p>
+    <h4 id="snap3">Snapshot 3 (29/01/22)</h4>
+    <a href="game_builds/build3.zip">Version download</a>
+    <p>
+      The map has been adjusted to be a bit more interesting and natural-looking, and colleges have been added to the land.
+      They have their own health bars and take 9 cannon shots to deplete, and once their health reaches 0 their sprite is
+      replaced with a rubble sprite. Colleges are uniquely identifiable from one another by both their colour and the shape
+      of their base. The player gains points and gold (shown in the top right corner, though currently the text is too small
+      to be easily parsable during gameplay) when they destroy a college.
+    </p>
+    <span>
+    <img
+      class="build_img"
+      src="img/BUILD3_scr1.png"
+      alt="Boat shooting at blue college."
+    />
+    <img
+      class="build_img"
+      src="img/BUILD3_scr2.png"
+      alt="A destroyed college, reduced to rubble."
+    />
+  </span>
+    <p>
+      
     </p>
   </body>
 </html>

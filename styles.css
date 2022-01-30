@@ -1,3 +1,10 @@
 .build_img {
     width: 700px;
+    margin: 10px;
+}
+
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+    border-color: "blue";
 }
